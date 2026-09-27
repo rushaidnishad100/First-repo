@@ -3,23 +3,684 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <meta name="description" content="Nishad - Frontend Developer Portfolio">
+    <meta name="author" content="Nishad">
+
+    <title>Nishad | Frontend Developer</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+        <div class="container nav-container">
+
+            <a href="#home" class="logo">
+                N<span>.</span>
+            </a>
+
+            <nav class="navbar" id="navbar">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+        </div>
+    </header>
 
 
-    <h1>main</h1>
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero section" id="home">
+
+            <div class="container hero-container">
+
+                <div class="hero-content reveal">
+
+                    <p class="hero-intro">
+                        <span class="line"></span>
+                        Hello, I'm
+                    </p>
+
+                    <h1>
+                        Nishad<span>.</span>
+                    </h1>
+
+                    <h2>
+                        I build <span id="typingText">modern websites</span>
+                    </h2>
+
+                    <p class="hero-description">
+                        A passionate Frontend Developer focused on building
+                        responsive, interactive and user-friendly web experiences.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn primary-btn">
+                            View My Work
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="#contact" class="btn secondary-btn">
+                            Let's Talk
+                        </a>
+                    </div>
+
+                    <div class="social-links">
+
+                        <a href="https://github.com/" target="_blank" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                        <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="#" aria-label="Twitter">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+
+                        <a href="mailto:nishad@example.com" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+
+                    </div>
+
+                </div>
 
 
+                <div class="hero-visual reveal">
+
+                    <div class="code-window">
+
+                        <div class="window-top">
+                            <div class="window-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <p>developer.js</p>
+                        </div>
+
+                        <div class="code-content">
+
+                            <p>
+                                <span class="purple">const</span>
+                                <span class="blue">developer</span>
+                                =
+                                <span class="yellow">{</span>
+                            </p>
+
+                            <p class="indent">
+                                name:
+                                <span class="green">'Nishad'</span>,
+                            </p>
+
+                            <p class="indent">
+                                role:
+                                <span class="green">'Frontend Developer'</span>,
+                            </p>
+
+                            <p class="indent">
+                                skills:
+                                <span class="yellow">[</span>
+                            </p>
+
+                            <p class="double-indent">
+                                <span class="green">'HTML'</span>,
+                                <span class="green">'CSS'</span>,
+                            </p>
+
+                            <p class="double-indent">
+                                <span class="green">'JavaScript'</span>,
+                                <span class="green">'Git'</span>
+                            </p>
+
+                            <p class="indent">
+                                <span class="yellow">]</span>,
+                            </p>
+
+                            <p class="indent">
+                                passion:
+                                <span class="green">'Creating'</span>
+                            </p>
+
+                            <p>
+                                <span class="yellow">}</span>;
+                            </p>
+
+                            <p>
+                                <span class="purple">console</span>.
+                                <span class="blue">log</span>(
+                                <span class="green">'Let's build!'</span>
+                                );
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="floating-card card-one">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Clean Code</span>
+                    </div>
+
+                    <div class="floating-card card-two">
+                        <i class="fa-solid fa-bolt"></i>
+                        <span>Fast & Responsive</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="scroll-down">
+                <span>Scroll Down</span>
+                <i class="fa-solid fa-arrow-down"></i>
+            </div>
+
+        </section>
 
 
+        <!-- ================= ABOUT ================= -->
+
+        <section class="section about" id="about">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <p class="section-tag">01 — About Me</p>
+                    <h2>Turning ideas into <span>digital experiences.</span></h2>
+                </div>
+
+                <div class="about-grid">
+
+                    <div class="about-image reveal">
+
+                        <div class="image-box">
+
+                            <div class="image-placeholder">
+                                <i class="fa-solid fa-user"></i>
+                                <p>Your Photo</p>
+                            </div>
+
+                            <div class="experience-badge">
+                                <strong>01+</strong>
+                                <span>Years<br>Learning</span>
+                            </div>
+
+                        </div>
+
+                    </div>
 
 
+                    <div class="about-content reveal">
+
+                        <p>
+                            I'm Nishad, an aspiring Frontend Developer who enjoys
+                            turning ideas into clean, modern and interactive websites.
+                        </p>
+
+                        <p>
+                            I started my journey with HTML and CSS and gradually
+                            moved into JavaScript, DOM manipulation, Git and GitHub.
+                            My goal is to become a Full Stack Developer and build
+                            useful products for real users.
+                        </p>
+
+                        <div class="about-info">
+
+                            <div>
+                                <span>Name</span>
+                                <strong>Nishad</strong>
+                            </div>
+
+                            <div>
+                                <span>Role</span>
+                                <strong>Frontend Developer</strong>
+                            </div>
+
+                            <div>
+                                <span>Location</span>
+                                <strong>Bangladesh</strong>
+                            </div>
+
+                            <div>
+                                <span>Learning</span>
+                                <strong>React & Full Stack</strong>
+                            </div>
+
+                        </div>
+
+                        <a href="#contact" class="text-btn">
+                            More about me
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
 
 
+        <!-- ================= SKILLS ================= -->
+
+        <section class="section skills" id="skills">
+
+            <div class="container">
+
+                <div class="section-heading center reveal">
+                    <p class="section-tag">02 — My Skills</p>
+                    <h2>Technologies I <span>work with.</span></h2>
+                    <p>
+                        The tools and technologies I'm currently learning and using
+                        to build modern websites.
+                    </p>
+                </div>
 
 
+                <div class="skills-grid">
+
+                    <div class="skill-card reveal">
+                        <div class="skill-icon html">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+
+                        <h3>HTML5</h3>
+                        <p>Semantic & accessible structure</p>
+
+                        <div class="skill-bar">
+                            <span style="width: 95%"></span>
+                        </div>
+
+                        <small>95%</small>
+                    </div>
+
+
+                    <div class="skill-card reveal">
+                        <div class="skill-icon css">
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+
+                        <h3>CSS3</h3>
+                        <p>Responsive modern interfaces</p>
+
+                        <div class="skill-bar">
+                            <span style="width: 90%"></span>
+                        </div>
+
+                        <small>90%</small>
+                    </div>
+
+
+                    <div class="skill-card reveal">
+                        <div class="skill-icon js">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+
+                        <h3>JavaScript</h3>
+                        <p>Interactive web applications</p>
+
+                        <div class="skill-bar">
+                            <span style="width: 82%"></span>
+                        </div>
+
+                        <small>82%</small>
+                    </div>
+
+
+                    <div class="skill-card reveal">
+                        <div class="skill-icon git">
+                            <i class="fa-brands fa-git-alt"></i>
+                        </div>
+
+                        <h3>Git</h3>
+                        <p>Version control & workflow</p>
+
+                        <div class="skill-bar">
+                            <span style="width: 75%"></span>
+                        </div>
+
+                        <small>75%</small>
+                    </div>
+
+
+                    <div class="skill-card reveal">
+                        <div class="skill-icon github">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+
+                        <h3>GitHub</h3>
+                        <p>Repositories & collaboration</p>
+
+                        <div class="skill-bar">
+                            <span style="width: 75%"></span>
+                        </div>
+
+                        <small>75%</small>
+                    </div>
+
+
+                    <div class="skill-card reveal">
+                        <div class="skill-icon react">
+                            <i class="fa-brands fa-react"></i>
+                        </div>
+
+                        <h3>React</h3>
+                        <p>Modern component-based UI</p>
+
+                        <div class="skill-bar">
+                            <span style="width: 45%"></span>
+                        </div>
+
+                        <small>Learning</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section class="section projects" id="projects">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <p class="section-tag">03 — Projects</p>
+                    <h2>Some things I've <span>built.</span></h2>
+                </div>
+
+
+                <div class="projects-grid">
+
+                    <article class="project-card reveal">
+
+                        <div class="project-image project-one">
+                            <div class="project-overlay">
+                                <a href="#" aria-label="View project">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+
+                            <div class="project-top">
+                                <i class="fa-regular fa-folder"></i>
+
+                                <div>
+                                    <a href="#" aria-label="GitHub repository">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <h3>Modern Landing Page</h3>
+
+                            <p>
+                                A responsive landing page with modern UI,
+                                smooth animations and mobile-first design.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card reveal">
+
+                        <div class="project-image project-two">
+                            <div class="project-overlay">
+                                <a href="#" aria-label="View project">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+
+                            <div class="project-top">
+                                <i class="fa-regular fa-folder"></i>
+
+                                <div>
+                                    <a href="#" aria-label="GitHub repository">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <h3>Task Manager</h3>
+
+                            <p>
+                                A JavaScript task management application with
+                                dynamic DOM interactions.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                                <span>DOM</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card reveal">
+
+                        <div class="project-image project-three">
+                            <div class="project-overlay">
+                                <a href="#" aria-label="View project">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+
+                            <div class="project-top">
+                                <i class="fa-regular fa-folder"></i>
+
+                                <div>
+                                    <a href="#" aria-label="GitHub repository">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <h3>Weather App</h3>
+
+                            <p>
+                                A weather dashboard designed to display
+                                real-time weather information through an API.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>JavaScript</span>
+                                <span>API</span>
+                                <span>CSS</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="all-projects reveal">
+                    <a href="#" class="btn secondary-btn">
+                        View More Projects
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= STATS ================= -->
+
+        <section class="stats-section">
+
+            <div class="container stats-grid">
+
+                <div class="stat reveal">
+                    <strong>10+</strong>
+                    <span>Projects Built</span>
+                </div>
+
+                <div class="stat reveal">
+                    <strong>5+</strong>
+                    <span>Technologies</span>
+                </div>
+
+                <div class="stat reveal">
+                    <strong>100%</strong>
+                    <span>Passion</span>
+                </div>
+
+                <div class="stat reveal">
+                    <strong>∞</strong>
+                    <span>Learning</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="section contact" id="contact">
+
+            <div class="container">
+
+                <div class="contact-box reveal">
+
+                    <div class="contact-content">
+
+                        <p class="section-tag">04 — Contact</p>
+
+                        <h2>
+                            Let's build something
+                            <span>great together.</span>
+                        </h2>
+
+                        <p>
+                            Have a project idea or just want to say hello?
+                            Feel free to reach out.
+                        </p>
+
+                        <a
+                            href="mailto:nishad@example.com"
+                            class="btn primary-btn"
+                        >
+                            Send Me a Message
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="contact-decoration">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <a href="#home" class="logo">
+                N<span>.</span>
+            </a>
+
+            <p>
+                Designed & built by <strong>Nishad</strong> © 2026
+            </p>
+
+            <div class="footer-social">
+
+                <a href="https://github.com/" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://linkedin.com/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <button class="back-top" id="backTop" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <script src="script.js"></script>
 
 </body>
 </html>
